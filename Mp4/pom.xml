@@ -126,11 +126,11 @@
 
 
 		<!-- DB 관련 -->
-		<!-- 오라클 드라이버 : maven.org에 새롭게 등록이 되어 있다. -->
+		<!-- mySql -->
 		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4</version>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>8.0.25</version>
 		</dependency>
 
 		<!-- HikariCP 커넥션 풀 -->
@@ -156,10 +156,11 @@
 
 		<!-- spring JDBC -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+
 
 		<!-- spring 트렌젝션 처리 : commit, rollback -->
 		<dependency>
