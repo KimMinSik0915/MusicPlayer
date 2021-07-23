@@ -23,9 +23,14 @@ public class DBTest {
 		try(Connection con = ds.getConnection()) {
 			
 			System.out.println("connection 출력 : " + con);
+			System.out.println("------------------------------");
+			System.out.println("DB연결 성공!!!!");
 			
 		} catch (Exception e) {
 			// TODO: handle exception
+			
+			System.out.println("-----------------------------");
+			System.out.println("DB연결 실패!!!!");
 			
 			e.printStackTrace();
 			
