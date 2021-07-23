@@ -21,11 +21,11 @@
 	<!-- HikariCP의 설정 -->
  	<bean id="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mysql://192.168.219.102/mp4?useSSL=false&amp;serverTimezone=UTC">
+        <property name="driverClassName" value="${spring.datasource.driverClassName}"></property>
+        <property name="url" value="${spring.datasource.url}">
         </property>
-        <property name="username" value="mp4"></property>
-        <property name="password" value="1Q2w3e4r5!"></property>
+        <property name="username" value="${spring.datasource.username}"></property>
+        <property name="password" value="${spring.datasource.password}"></property>
     </bean>   
 
 	
