@@ -7,7 +7,7 @@ import com.mp4.music.vo.MusicVO;
 public interface MusicMapper {
 	
 	// 1. 리스트
-	public List<MusicVO> list();
+	public List<MusicVO> list() throws Exception;
 
 	// 2. 보기
 	public MusicVO view(MusicVO vo);

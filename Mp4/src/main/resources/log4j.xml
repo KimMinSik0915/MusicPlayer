@@ -12,7 +12,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="org.zerock"> 
+	<logger name="com.mp4"> 
 		<level value="info" />
 	</logger>
 	
@@ -39,23 +39,37 @@
 		2. server를 클린시킨다.
 		3. Module path를 다시 "/"로 수정해 준다.
 		4. server를 시작하고 확인한다.  -->
-	
-	<logger name="jdbc.audit">
-		<level value="warn" />
-	</logger>
+  <!-- SQL Logger -->
 
-	<logger name="jdbc.resultset">
-		<level value="warn" />
-	</logger>
+   <logger name="jdbc.sqltiming">
+      <level value="warn" />
+      <appender-ref ref="console"/> 
+   </logger>
 
-	<logger name="jdbc.connection">
-		<level value="warn" />
-	</logger>
+   <logger name="jdbc.sqlonly"> 
+      <level value="info"/> 
+      <appender-ref ref="console"/> 
+   </logger>
 
-	<!-- Root Logger -->
-	<root>
-		<priority value="info" />
-		<appender-ref ref="console" />
-	</root>
-	
+   <logger name="jdbc.audit"> 
+      <level value="warn"/>  
+      <appender-ref ref="console"/> 
+   </logger> 
+
+   <logger name="jdbc.resultset">
+      <level value="warn" />
+      <appender-ref ref="console"/> 
+   </logger>
+
+   <logger name="jdbc.resultsettable"> 
+      <level value="info"/>  
+      <appender-ref ref="console"/> 
+   </logger> 
+   
+   <!-- Root Logger -->
+   <root>
+      <priority value="info" />
+      <appender-ref ref="console"/>
+   </root>
+
 </log4j:configuration>

@@ -11,6 +11,6 @@ public class MusicVO {
 	
 	private Date isuueDate;
 	
-	private long hti;
+	private long hit;
 	 
 }

@@ -9,6 +9,6 @@ import com.mp4.music.vo.MusicVO;
 @Service
 public interface MusicService {
 
-	public List<MusicVO	> list() throws Exception;
+	public List<MusicVO> list() throws Exception;
 	
 }
