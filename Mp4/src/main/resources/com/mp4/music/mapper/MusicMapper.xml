@@ -9,4 +9,10 @@
 		FROM music
 	</select>
 	
+	<select id="view" resultType="com.mp4.music.vo.MusicVO">
+		Select titlem singer, album, issueDate, image, hit, url
+		FROM music
+		WHERE title = #{title}
+	</select>
+	
 </mapper>
