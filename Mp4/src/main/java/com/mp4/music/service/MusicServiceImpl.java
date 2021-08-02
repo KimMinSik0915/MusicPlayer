@@ -26,5 +26,12 @@ public class MusicServiceImpl implements MusicService {
 		return mapper.list();
 		
 	}
+	
+	@Override
+	public MusicVO view(String title) thrwos Exception {
+	
+		return mapper.view(String title);
+		
+	}
 
 }
