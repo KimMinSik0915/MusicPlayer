@@ -33,4 +33,15 @@ public class MusicController {
 		
 	}
 	
+	@GetMapping("view:)
+	public String view(Model model, String title) throws Exception {
+	
+		log.info(service.view(title));
+		
+		model.addAttribute("vo", service.view(title));
+		
+		return MODUEL + "/view";
+		
+	}
+	
 }
