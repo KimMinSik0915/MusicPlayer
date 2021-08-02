@@ -30,7 +30,11 @@ public class MusicServiceImpl implements MusicService {
 	@Override
 	public MusicVO view(String title) thrwos Exception {
 	
-		return mapper.view(String title);
+		log.info(title);
+		
+		mapper.increase(title);		// hit 증가를 위한 mapper 호출
+		
+		return mapper.view(title);
 		
 	}
 
