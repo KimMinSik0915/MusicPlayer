@@ -40,7 +40,7 @@ public class MusicController {
 		
 		model.addAttribute("vo", service.view(title));
 		
-		return MODUEL + "/view";
+		return MODULE + "/view";
 		
 	}
 	
