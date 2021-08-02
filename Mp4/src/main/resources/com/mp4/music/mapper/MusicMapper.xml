@@ -15,4 +15,9 @@
 		WHERE title = #{title}
 	</select>
 	
+	<update id="increase">
+		update music set hit = hit + 1
+		WHERE title = #{title}
+	</update>
+	
 </mapper>
