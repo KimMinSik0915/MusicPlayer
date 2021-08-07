@@ -1,4 +1,4 @@
-package com.mp4.like.maapper;
+package com.mp4.like.mapper;
 
 import java.util.List;
 
@@ -21,5 +21,5 @@ public interface LikeMapper {
 //	//좋아요 보관함 전체데이터 가지고 오기
 //	public Long getTotalRow(PageObject pageObject) throws Exception;
 	
-	public LikeVO bookmark(LikeVO vo) throws Exception;
+//	public LikeVO bookmark(LikeVO vo) throws Exception;
 }

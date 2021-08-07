@@ -7,9 +7,10 @@ import javax.inject.Inject;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.mp4.like.maapper.LikeMapper;
+import com.mp4.like.mapper.LikeMapper;
 import com.mp4.like.vo.LikeVO;
 //import com.webjjang.util.PageObject;
+import com.webjjang.util.PageObject;
 
 import lombok.extern.log4j.Log4j;
 
@@ -23,8 +24,8 @@ public class LikeServiceImpl implements LikeService {
 
 	// 좋아요 리스트 ->  후에 PageObject 추가하기
 //	@Override
-////	public List<LikeVO> list(PageObject pageObject) throws Exception {
-//		// TODO Auto-generated method stub
+//	public List<LikeVO> list(PageObject pageObject) throws Exception {
+////		 TODO Auto-generated method stub
 //		
 //		log.info("Like list pageObject : " + pageObject);
 //		
@@ -51,12 +52,12 @@ public class LikeServiceImpl implements LikeService {
 		return mapper.unlike(vo);
 	}
 
-	@Override
-	public LikeVO bookmark(LikeVO vo) throws Exception {
-		// TODO Auto-generated method stub
-		log.info(vo);
-		
-		return mapper.bookmark(vo);
-	}
+//	@Override
+//	public LikeVO bookmark(LikeVO vo) throws Exception {
+//		// TODO Auto-generated method stub
+//		log.info(vo);
+//		
+//		return mapper.bookmark(vo);
+//	}
 
 }

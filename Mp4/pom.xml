@@ -13,6 +13,7 @@
 		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.9.0</org.aspectj-version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
+		<project.basedir>c:/project/spring/workspace/MusicPlayer</project.basedir>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -101,6 +102,15 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+
+		<!-- 페이지 처리 -->
+		<dependency>
+			<groupId>com.webjjang</groupId>
+			<artifactId>util.PageObject</artifactId>
+			<version>2.5</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/pageObject.jar</systemPath>
 		</dependency>
 
 		<!-- Test -->
