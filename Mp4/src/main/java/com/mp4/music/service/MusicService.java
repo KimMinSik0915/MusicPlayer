@@ -10,5 +10,7 @@ import com.mp4.music.vo.MusicVO;
 public interface MusicService {
 
 	public List<MusicVO> list() throws Exception;
+
+	public MusicVO view(String title) throws Exception;
 	
 }

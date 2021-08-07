@@ -10,7 +10,7 @@ public interface MusicMapper {
 	public List<MusicVO> list() throws Exception;
 
 	// 2. 보기
-	public MusicVO view(MusicVO vo);
+	public MusicVO view(String title);
 	
 	// 3. 조회수 증가
 	public long increase(String title);

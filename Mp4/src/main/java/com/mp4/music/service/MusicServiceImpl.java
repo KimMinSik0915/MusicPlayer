@@ -24,7 +24,14 @@ public class MusicServiceImpl implements MusicService {
 		// TODO Auto-generated method stub
 
 		return mapper.list();
+	}
+	
+	@Override
+	public MusicVO view(String title) throws Exception {
+	
+		mapper.increase(title);		// hit 증가를 위한 mapper 호출
 		
+		return mapper.view(title);
 	}
 
 }
